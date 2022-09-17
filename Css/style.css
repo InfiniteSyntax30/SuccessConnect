@@ -682,7 +682,7 @@
 
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
   .waveback{
     position: relative;
     width: 125%;
@@ -818,23 +818,6 @@
   }
   
     /* footer 767px MQ ends */
-}
-
-@media screen and (max-width:418px){
-  .logo{
-    height: 60px;
-    width: 80px;
-    margin-left: 10px;
-  }
-  .sub{
-    left: 98px;
-  }
-  .motto{
-    left: 98px;
-  }
-  .navlinks a{
-    padding: 0px;
-  }
 }
 
 @media screen and (max-width:480px){
@@ -991,6 +974,43 @@
   
     /* footer 480px MQ ends */
 }
+
+
+@media screen and (max-width:418px){
+  .logo{
+    height: 60px;
+    width: 80px;
+    margin-left: 10px;
+  }
+  .sub{
+    left: 98px;
+  }
+  .motto{
+    left: 98px;
+  }
+  .navlinks a{
+    padding: 0px;
+  }
+}
+
+
+@media screen and (max-width:413px){
+  .logo{
+    height: 60px;
+    width: 80px;
+    margin-left: 5px;
+  }
+  .sub{
+    left: 93px;
+  }
+  .motto{
+    left: 94px;
+  }
+  .navlinks a{
+    padding: 0px;
+  }
+}
+
 
 @media screen and (max-width:375px){
   .waveback{
