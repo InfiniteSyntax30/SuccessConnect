@@ -1,0 +1,1197 @@
+/* header styling starts */
+#head{
+  background: linear-gradient(-50deg, #004de6 30%, #28166f 40%, #28166f 100%);;;
+  margin-bottom: -95px;
+}
+.logo{
+  height: 80px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-right: 8px;
+  }
+
+  .header{
+    display:flex;
+  }
+  .title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .maintit, .sub, .motto{
+    display:flex;
+    color: antiquewhite;
+  }
+  .maintit h2{
+    margin-top: 15px;
+    font-size: 37px;
+  }
+  .maintit h3{
+    position: relative;
+    left: 300px;
+    top: 5px;
+  }
+  .sub{
+    position: relative;
+    left: 138px;
+    bottom: 45px;
+    font-size: 30px;
+  }
+  .sub h3{
+    font-size: 30px;
+  }
+  .motto{
+    position: relative;
+    left: 138px;
+    bottom: 75px;
+  }
+  .motto p{
+    font-style: italic;
+    font-size: 13px;
+  }
+  .navlinks ul{
+    display: flex;
+    list-style: none;
+    margin-top: 45px;
+
+  }
+  .navlinks a{
+    text-decoration: none;
+    font-size: 18px;
+    color: antiquewhite;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  .navlinks a:hover{
+    color: rgb(177, 16, 240);
+    cursor: pointer;
+  }
+
+  /* header styling ends */
+
+
+/* Wave Background styling starts */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.waveback{
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  background: linear-gradient(-50deg, #58c3ff 0, #004de6 40%, #003bb1 100%);
+  overflow: hidden;
+}
+.waveback .wave{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background: url(../Assets/wave2.png);
+  background-size: 1000px 100px;
+}
+.waveback .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000px;
+  opacity: 0.8;
+  animation-delay: 0s;
+}
+.waveback .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999px;
+  opacity: 0.5;
+  animation-delay: -5s;
+}
+.waveback .wave.wave3{
+  animation: animate 30s linear infinite;
+  z-index: 998px;
+  opacity: 0.2;
+  animation-delay: -2s;
+}
+.waveback .wave.wave4{
+  animation: animate2 10s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+}
+@keyframes animate{
+  0%{
+      background-position-x: 0px;
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+@keyframes animate2{
+  0%{
+      background-position-x: 0px;
+  }
+  100%{
+      background-position-x: -1000px;
+  }
+}
+
+/* Wave Background styling ends */
+
+/* Home styling starts*/
+.start{
+  display: flex;
+  justify-content: space-between;
+}
+.orange{
+  color: rgb(241, 50, 29);
+}
+.banleft h2{
+  width: 650px;
+  margin-left: 80px;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  line-height: 50px;
+  text-align: left;
+  margin-top: 120px;
+  color: white;
+}
+.banleft p{
+  font-family: sans-serif;
+  color: white;
+  width: 620px;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+.button a{
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  background: rgb(241, 50, 29);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-left: 80px;
+  transition: all 0.5s ease-in-out ;
+}
+.button a:hover{
+  background: #0ff335;
+}
+
+.exp{
+  height: 386px;
+  width: 570px;
+  margin-top: 70px;
+  margin-right: 50px;
+}
+
+/* Home styling ends */
+
+/* Services styling starts */
+
+#Services{
+  background: #f6f6f6;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.serv{
+  padding-top: 40px;
+}
+.serv h2, .serv p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.serv h2{
+  font-size: 30px;
+  text-align: center;
+  color: #1a0f33;
+}
+.serv p{
+  text-align: left;
+  font-size: 18px;
+}
+.courses{
+  margin-left: 120px;
+  margin-right: 120px;
+  text-align: center;
+}
+.first, .second, .third{
+  display: flex;
+  justify-content: space-between;
+}
+.asserv{
+  height: 100px;
+  margin-top: 20px;
+}
+.bascomp, .ms, .graphic, .web, .UI, .network, .strain, .sofdev, .mobdev, .siwes{
+  background: #ffff;
+}
+.col{
+  margin-bottom: 40px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  width: 280px;
+  height: 280px;
+  transition: all 0.5s ease-in-out;
+}
+.col:hover{
+  border: 1px solid #003bb1;
+  transform: rotate(5deg);
+}
+.col h6{
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  color: #1a0f33;
+  margin: 10px 0px;
+}
+.col p{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #4a3d55;
+  line-height: 28px;
+
+}
+.lastc .col{
+  height: 280px;
+  width: 380px;
+  position: relative;
+  left: 320px;
+}
+/* Services styling ends */
+
+/* About styling starts */
+.describe h1, .team h2{
+  color: #1a0f33;
+}
+.describe h1{
+  font-size: 30px;
+}
+#About{
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 120px;
+  padding-bottom: 20px;
+
+}
+.describe p{
+  color:#4a3d55;
+  font-size: 16px;
+}
+
+.backline{
+  width: 250px;
+  height: 300px;
+}
+.int{
+  position: relative;
+  left: 252px;
+  bottom: 25px;
+}
+.team h2{
+  font-size: 25px;
+}
+.teamcontent{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.oga h3, .log h3, .oga h4, .log h4{
+  position: relative;
+  margin-top: -20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #1a0f33
+}
+.oga h3{
+  left:260px;
+}
+.log h3{
+  left: 200px;
+}
+.oga h4{
+  left:350px;
+  margin-top: -30px;
+}
+.log h4{
+  left: 265px;
+  margin-top: -30px;
+}
+.oga, .log{
+  position: relative;
+  right: 100px;
+  top: 30px;
+}
+
+/* About styling ends */
+
+/* Contact styling starts */
+
+#contactUs{
+  background: #b4c4e4 url(../Assets/slant.png);
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.contacthead h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  color: #ffff;
+  background: #004de6;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+.details{
+  padding-left: 80px;
+}
+.details .leave, .details .cont{
+  font-size: 25px;
+  border-bottom: 3px solid #004de6;
+  border-radius: 3px;
+}
+.details .leave{
+  width: 270px;
+}
+.details .cont{
+  width: 180px;
+}
+.details p{
+  font-size: 16px;
+  color: black;
+}
+.details ol, .contform ul{
+  list-style: none;
+  margin-left: -27px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+.contform ul input{
+  padding: 10px;
+  padding-right: 70px;
+  border-radius: 4px;
+}
+.contform ul input::placeholder{
+  font-size: 15px;
+  text-align: left;
+}
+.contform .move{
+  padding-bottom: 20px;
+}
+.contform .ski{
+  padding-bottom: 40px;
+}
+.contform textarea{
+  width: 500px;
+  height: 200px;
+  border-radius: 4px;
+}
+.contform textarea::placeholder{
+  font-size: 18px;
+  padding-left: 10px;
+}
+.contform .submit{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  background: #4a3d55;
+  color: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+}
+.contform .mit{
+  margin-left: 385px;
+}
+.mit a{
+  text-decoration: none;
+}
+
+/* Contact styling ends */
+
+/* footer styling starts */
+#footer{
+  background-image: url(../Assets/footer.png);
+  padding-bottom: 40px;
+}
+.abt{
+  padding-left: 80px;
+  width: 400px;
+}
+.abt h3, .add h3{
+  width: 100px;
+}
+.end h3{
+  text-align: center;
+  color: #1a0f33;
+  border-bottom: 3px solid #004de6;
+  border-radius: 3px;
+}
+.abt p{
+  font-size: 14px;
+  color: #4a3d55;
+}
+.end{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.quick ol{
+  list-style: none;
+}
+.quick ol a{
+  text-decoration: none;
+  color: #4a3d55;
+  font-size: 15px;
+  transition: all ease-in-out 0.2s;
+}
+.quick ol a:hover{
+  color: black;
+}
+.add ol{
+  list-style: none;
+}
+.add{
+  padding-right: 50px;
+}
+.add p{
+  margin-left: -27px;
+  text-transform: capitalize;
+  width: 300px;
+  font-size: 15px;
+  color: #4a3d55;
+}
+
+/* footer styling ends */
+
+/* COMP PAGE STYLING STARTS*/
+.complete h2{
+  text-transform: capitalize;
+  color: #004de6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 2px red;
+}
+/* COMP PAGE STYLING ENDS */
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:1024px) {
+  .waveback{
+    position: relative;
+    width: 116%;
+    height: 38rem;
+  }
+    /* Head 1024px MQ Starts */
+  #head{
+    width: 116%;
+    margin-bottom: -80px;
+  }
+  .logo{
+    height: 60px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 8px;
+  }
+  .maintit h2{
+    margin-top: 15px;
+    font-size: 29px;
+  }
+  .maintit h3{
+    left: 380px;
+    top: 5px;
+  }
+  .sub{
+    left: 108px;
+    bottom: 38px;
+  }
+  .sub h3{
+    font-size: 25px;
+  }
+  .motto{
+    left: 108px;
+    bottom: 68px;
+  }
+  .motto p{
+    font-size: 14px;
+  }
+  .navlinks ul{
+    margin-left: 100px;
+  }
+  .navlinks a{
+    font-size: 15px;
+    padding: 5px;
+  }
+    /* Head 1024px MQ ends */
+
+    /* Home 1024px MQ starts*/
+
+  .start{
+    justify-content: space-between;
+  }
+  .banleft h2{
+    margin-left: 60px;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    line-height: 45px;
+  }
+  .banleft p{
+    width: 600px;
+    font-size: 17px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-left: 60px;
+  }
+  .button a{
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-left: 60px;
+
+  }
+  .exp{
+    height: 300px;
+    width: 480px;
+    margin-top: 100px;
+  }
+
+    /* Home 1024px MQ ends */
+
+    /* Services 1024px MQ starts */
+
+  #Services{
+    width: 106%;
+  }
+  .courses{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .col p{
+    font-size: 14px;
+  }
+  .lastc .col{
+    width: 370px;
+    left: 310px;
+  }
+    /* Services 1024px MQ ends */
+
+    /* About 1024px MQ starts */
+
+  #About{
+    width: 92%;
+  }
+  .describe p{
+    width: 110%;
+    font-size: 16px;
+  }
+  .backline{
+    position: relative;
+    left: 252px;
+  }
+  .int{
+    position: absolute;
+    bottom: 75px;
+    z-index: 9;
+  }
+  .teamcontent{
+    position: relative;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .oga h3, .log h3, .oga h4, .log h4{
+    margin-top: 5px;
+  }
+  .oga h4, .log h4{
+    margin-top: -30px;
+  }
+  .oga, .log{
+    position: relative;
+    right: 100px;
+    top: 30px;
+  }
+
+    /* About 1024px MQ ends */
+
+    /* Contact 1024px MQ starts */
+
+  #contactUs{
+    width: 116%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .details{
+    padding-left: 60px;
+  }
+  .details p{
+    font-size: 16px;
+  }
+  .content{
+    padding-right: 40px;
+  }
+  .details ol, .contform ul{
+    margin-left: -25px;
+  }
+  .contform ul input{
+    padding-right: 65px;
+  }
+  .contform textarea::placeholder{
+    font-size: 18px;
+  }
+  .contform .submit{
+    font-size: 14px;
+  }
+  .contform .mit{
+    margin-left: 375px;
+  }
+
+    /* Contact 1024px MQ ends */
+
+    /* footer 1024px MQ starts */
+  #footer{
+    width: 116%;
+  }
+  .abt{
+    padding-left: 60px;
+  }
+  .abt p, .quick ol a, .add p{
+    font-size: 16px;
+  }
+  .add ol{
+    list-style: none;
+  }
+  .add{
+    padding-right: 50px;
+  }
+  .add p{
+    margin-left: -25px;
+  }
+    /* footer 1024px MQ ends */
+
+}
+
+@media screen and (max-width:768px){
+  .waveback{
+    position: relative;
+    width: 125%;
+    height: 36rem;
+  }
+  /* Head 768px MQ Starts */
+  #head{
+    width: 125%;
+  }
+  .maintit h2{
+    font-size: 25px;
+  }
+  .maintit h3{
+    left: 260px;
+    top: 5px;
+  }
+  .sub h3{
+    font-size: 24px;
+  }
+  .motto p{
+    font-size: 15px;
+  }
+  .navlinks ul{
+    margin-left: 0px;
+  }
+  .navlinks a{
+    font-size: 15px;
+    padding: 0px;
+  }
+    /* Head 768px MQ ends */
+
+    /* Home 768px MQ starts*/
+
+  .banleft h2{
+    margin-top: 100px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    width: 500px;
+
+  }
+  .banleft p{
+    width: 520px;
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+  .exp{
+    height: 280px;
+    width: 370px;
+    margin-top: 82px;
+  }
+
+    /* Home 768px MQ ends */
+
+    /* Services 768px MQ starts */
+
+  #Services{
+    width: 112%;
+  }
+  .serv p{
+    font-size: 17px;
+  }
+  .courses{
+    margin-left: 30px;
+    margin-right: 70px;
+  }
+  .col{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .col p{
+    font-size: 14px;
+  }
+  .lastc .col{
+    width: 370px;
+    left: 188px;
+  }
+    /* Services 768px MQ ends */
+
+    /* About 768px MQ starts */
+
+  #About{
+    width: 93%;
+  }
+  .describe p{
+    width: 120%;
+  }
+  .oga, .log{
+    right: 120px;
+  }
+
+    /* About 768px MQ ends */
+
+    /* Contact 768px MQ starts */
+
+  #contactUs{
+    width: 125%;
+    padding-bottom: 40px;
+  }
+  .details{
+    padding-right: 100px;
+  }
+  .details p{
+    font-size: 16px;
+  }
+  .contform ul input{
+    padding-right: 30px;
+  }
+  .contform textarea{
+    width: 430px;
+    height: 200px;
+    border-radius: 4px;
+  }
+  .contform .mit{
+    margin-left: 310px;
+  }
+
+    /* Contact 768px MQ ends */
+
+    /* footer 768px MQ starts */
+  #footer{
+    width: 125%;
+  }
+  .abt{
+    padding-left: 60px;
+    width: 350px;
+  }
+  .abt p{
+    font-size: 15px;
+  }
+  .add{
+    padding-right: 10px;
+  }
+  
+    /* footer 768px MQ ends */
+}
+
+@media screen and (max-width:425px){
+  .waveback{
+    width: 204%;
+    height: 36rem;
+  }
+
+  /* Head 425px MQ Starts */
+  #head{
+    width: 204%;
+    margin-bottom: -90px;
+  }
+  .maintit h2{
+    font-size: 20px;
+  }
+  .maintit h3{
+    left: 260px;
+    top: 5px;
+  }
+  .sub{
+    bottom: 45px;
+  }
+  .sub h3{
+    font-size: 19px;
+  }
+  .motto{
+    bottom: 76px;
+  }
+  .motto p{
+    font-size: 16px;
+  }
+  .navlinks ul{
+    margin-left: -10px;
+  }
+ 
+    /* Head 425px MQ ends */
+
+    /* Home 425px MQ starts*/
+
+  .banleft h2{
+    margin-top: 100px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    width: 450px;
+
+  }
+  .banleft p{
+    width:420px;
+    font-size: 16px;
+    line-height: 31px;
+    font-weight: 500;
+  }
+  .exp{
+    height: 280px;
+    width: 420px;
+    margin-top: 100px;
+    position: relative;
+    right: 40px;
+  }
+
+    /* Home 425px MQ ends */
+
+    /* Services 425px MQ starts */
+
+  #Services{
+    width: 180%;
+  }
+  .serv p{
+    font-size: 20px;
+  }
+  .courses{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .col{
+    height: 320px;
+    width: 400px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .col p{
+    font-size: 16px;
+    color: black;
+  }
+  .lastc .col{
+    height: 290px;
+    left: 163px;
+  }
+    /* Services 425px MQ ends */
+
+    /* About 425px MQ starts */
+
+  #About{
+    width: 150%;
+    
+  }
+  .describe p{
+    font-size: 20px;
+    width: 120%;
+  }
+  .log{
+    right: 120px;
+  }
+  .oga{
+    right:160px
+  }
+
+    /* About 425px MQ ends */
+
+    /* Contact 425px MQ starts */
+
+  #contactUs{
+    width: 204%;
+    padding-bottom: 30px;
+  }
+  .details{
+    padding-right: 80px;
+  }
+  .details p{
+    font-size: 16px;
+  }
+  .details li p{
+    width: 280px;
+  }
+  .contform ul input{
+    padding-right: 15px;
+  }
+  .contform textarea{
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+  }
+  .contform .mit{
+    margin-left: 270px;
+  }
+
+    /* Contact 425px MQ ends */
+
+    /* footer 425px MQ starts */
+  #footer{
+    width: 204%;
+  }
+  .abt{
+    padding-left: 60px;
+    width: 295px;
+  }
+  .abt p{
+    font-size: 15px;
+  }
+  .add{
+    padding-right: 10px;
+  }
+  
+    /* footer 425px MQ ends */
+}
+
+@media screen and (max-width:375px){
+  .waveback{
+    width: 228%;
+    height: 36rem;
+  }
+
+    /* Head 375px MQ Starts */
+  #head{
+    width: 228%;
+    margin-bottom: -90px;
+  }
+  .maintit h3{
+    left: 220px;
+  }
+  .motto p{
+    font-size: 19px;
+  }
+  .navlinks ul{
+    margin-left: -30px;
+  }
+ 
+    /* Head 375px MQ ends */
+
+    /* Home 375px MQ starts*/
+
+  .banleft h2{
+    font-size: 26px;
+  }
+  .banleft p{
+    font-size: 17px;
+  }
+  .exp{
+    right: 45px;
+  }
+
+    /* Home 375px MQ ends */
+
+    /* Services 375px MQ starts */
+
+  #Services{
+    width: 200%;
+  }
+  .serv h2{
+    font-size: 37px;
+  }
+  .serv p{
+    font-size: 25px;
+  }
+  .courses{
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  .col{
+    height: 340px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .col p{
+    font-size: 18px;
+    color: black;
+  }
+  .lastc .col{
+    height: 300px;
+    left: 163px;
+  }
+    /* Services 375px MQ ends */
+
+    /* About 375px MQ starts */
+
+  #About{
+    width: 167%;
+  }
+  .describe p{
+    font-size: 25px;
+    width: 120%;
+  }
+  .log{
+    right: 100px;
+  }
+  .oga{
+    right:180px
+  }
+
+    /* About 375px MQ ends */
+
+    /* Contact 375px MQ starts */
+
+  #contactUs{
+    width: 228%;
+  }
+  .details{
+    padding-right: 80px;
+  }
+
+    /* Contact 375px MQ ends */
+
+    /* footer 375px MQ starts */
+  #footer{
+    width: 228%;
+  }
+  .abt{
+    width: 290px;
+  }
+  .abt p{
+    font-size: 16px;
+  }
+  
+    /* footer 375px MQ ends */
+}
+
+@media screen and (max-width: 320px){
+  .waveback{
+    width: 260%;
+    height: 36rem;
+  }
+
+    /* Head 320px MQ Starts */
+  #head{
+    width: 260%;
+    margin-bottom: -90px;
+  }
+  .maintit h3{
+    left: 200px;
+  }
+  .motto p{
+    font-size: 19px;
+  }
+  .navlinks ul{
+    margin-left: -50px;
+  }
+ 
+    /* Head 320px MQ ends */
+
+    /* Home 320px MQ starts*/
+
+  .banleft h2{
+    font-size: 24px;
+  }
+  .exp{
+    right: 65px;
+  }
+
+    /* Home 320px MQ ends */
+
+    /* Services 320px MQ starts */
+
+  #Services{
+    width: 227%;
+  }
+  .courses{
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .col{
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .lastc .col{
+    left: 150px;
+  }
+    /* Services 320px MQ ends */
+
+    /* About 320px MQ starts */
+
+  #About{
+    width: 190%;
+  }
+  .describe p{
+    font-size: 25px;
+    width: 120%;
+  }
+  .log{
+    right: 100px;
+  }
+  .oga{
+    right:180px
+  }
+
+    /* About 320px MQ ends */
+
+    /* Contact 320px MQ starts */
+
+  #contactUs{
+    width: 260%;
+  }
+  .details{
+    padding-right: 60px;
+  }
+  .details p{
+    font-size: 16px;
+  }
+
+  .contform ul input{
+    padding-right: 10px;
+  }
+  .contform textarea{
+    width: 390px;
+  }
+
+
+    /* Contact 320px MQ ends */
+
+    /* footer 320px MQ starts */
+  #footer{
+    width: 260%;
+  }
+  #footer p, .quick li a{
+    font-size: 17px;
+  }
+  .abt{
+    width: 295px;
+  }
+    /* footer 320px MQ ends */
+
+
+
+
+
+
+}
