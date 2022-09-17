@@ -682,13 +682,13 @@
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   .waveback{
     position: relative;
     width: 125%;
     height: 36rem;
   }
-  /* Head 768px MQ Starts */
+  /* Head 767px MQ Starts */
   #head{
     width: 125%;
   }
@@ -712,9 +712,9 @@
     font-size: 15px;
     padding: 0px;
   }
-    /* Head 768px MQ ends */
+    /* Head 767px MQ ends */
 
-    /* Home 768px MQ starts*/
+    /* Home 767px MQ starts*/
 
   .banleft h2{
     margin-top: 100px;
@@ -735,9 +735,9 @@
     margin-top: 82px;
   }
 
-    /* Home 768px MQ ends */
+    /* Home 767px MQ ends */
 
-    /* Services 768px MQ starts */
+    /* Services 767px MQ starts */
 
   #Services{
     width: 112%;
@@ -760,9 +760,9 @@
     width: 370px;
     left: 188px;
   }
-    /* Services 768px MQ ends */
+    /* Services 767px MQ ends */
 
-    /* About 768px MQ starts */
+    /* About 767px MQ starts */
 
   #About{
     width: 93%;
@@ -774,9 +774,9 @@
     right: 120px;
   }
 
-    /* About 768px MQ ends */
+    /* About 767px MQ ends */
 
-    /* Contact 768px MQ starts */
+    /* Contact 767px MQ starts */
 
   #contactUs{
     width: 125%;
@@ -800,9 +800,9 @@
     margin-left: 310px;
   }
 
-    /* Contact 768px MQ ends */
+    /* Contact 767px MQ ends */
 
-    /* footer 768px MQ starts */
+    /* footer 767px MQ starts */
   #footer{
     width: 125%;
   }
@@ -817,16 +817,16 @@
     padding-right: 10px;
   }
   
-    /* footer 768px MQ ends */
+    /* footer 767px MQ ends */
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:480px){
   .waveback{
     width: 204%;
     height: 36rem;
   }
 
-  /* Head 425px MQ Starts */
+  /* Head 480px MQ Starts */
   #head{
     width: 204%;
     margin-bottom: -90px;
@@ -854,9 +854,9 @@
     margin-left: -10px;
   }
  
-    /* Head 425px MQ ends */
+    /* Head 480px MQ ends */
 
-    /* Home 425px MQ starts*/
+    /* Home 480px MQ starts*/
 
   .banleft h2{
     margin-top: 100px;
@@ -879,9 +879,9 @@
     right: 40px;
   }
 
-    /* Home 425px MQ ends */
+    /* Home 480px MQ ends */
 
-    /* Services 425px MQ starts */
+    /* Services 480px MQ starts */
 
   #Services{
     width: 180%;
@@ -907,9 +907,9 @@
     height: 290px;
     left: 163px;
   }
-    /* Services 425px MQ ends */
+    /* Services 480px MQ ends */
 
-    /* About 425px MQ starts */
+    /* About 480px MQ starts */
 
   #About{
     width: 150%;
@@ -926,9 +926,9 @@
     right:160px
   }
 
-    /* About 425px MQ ends */
+    /* About 480px MQ ends */
 
-    /* Contact 425px MQ starts */
+    /* Contact 480px MQ starts */
 
   #contactUs{
     width: 204%;
@@ -955,9 +955,9 @@
     margin-left: 270px;
   }
 
-    /* Contact 425px MQ ends */
+    /* Contact 480px MQ ends */
 
-    /* footer 425px MQ starts */
+    /* footer 480px MQ starts */
   #footer{
     width: 204%;
   }
@@ -972,7 +972,7 @@
     padding-right: 10px;
   }
   
-    /* footer 425px MQ ends */
+    /* footer 480px MQ ends */
 }
 
 @media screen and (max-width:375px){
