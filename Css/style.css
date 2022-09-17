@@ -688,7 +688,7 @@
     width: 125%;
     height: 36rem;
   }
-  /* Head 767px MQ Starts */
+  /* Head 768px MQ Starts */
   #head{
     width: 125%;
   }
@@ -712,9 +712,9 @@
     font-size: 15px;
     padding: 0px;
   }
-    /* Head 767px MQ ends */
+    /* Head 768px MQ ends */
 
-    /* Home 767px MQ starts*/
+    /* Home 768px MQ starts*/
 
   .banleft h2{
     margin-top: 100px;
@@ -735,9 +735,9 @@
     margin-top: 82px;
   }
 
-    /* Home 767px MQ ends */
+    /* Home 768px MQ ends */
 
-    /* Services 767px MQ starts */
+    /* Services 768px MQ starts */
 
   #Services{
     width: 112%;
@@ -760,9 +760,9 @@
     width: 370px;
     left: 188px;
   }
-    /* Services 767px MQ ends */
+    /* Services 768px MQ ends */
 
-    /* About 767px MQ starts */
+    /* About 768px MQ starts */
 
   #About{
     width: 93%;
@@ -774,9 +774,9 @@
     right: 120px;
   }
 
-    /* About 767px MQ ends */
+    /* About 768px MQ ends */
 
-    /* Contact 767px MQ starts */
+    /* Contact 768px MQ starts */
 
   #contactUs{
     width: 125%;
@@ -800,9 +800,9 @@
     margin-left: 310px;
   }
 
-    /* Contact 767px MQ ends */
+    /* Contact 768px MQ ends */
 
-    /* footer 767px MQ starts */
+    /* footer 768px MQ starts */
   #footer{
     width: 125%;
   }
@@ -817,7 +817,91 @@
     padding-right: 10px;
   }
   
-    /* footer 767px MQ ends */
+    /* footer 768px MQ ends */
+}
+
+@media screen and (max-width:577px){
+  .waveback{
+    width: 153%;
+  }
+  #head{
+    width: 153%;
+    margin-bottom: -85px;
+  }
+  .maintit h3{
+    left: 200px;
+  }
+  .navlinks a{
+    margin-left: -70px;
+    padding: 26.5px;
+    font-size: 15px;
+  }
+  .motto p{
+    font-size: 17px;
+  }
+  .banleft p{
+    width:410px;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+  .exp{
+    height: 270px;
+    width: 390px;
+    margin-top: 120px;
+    position: relative;
+    right: 50px;
+  }
+
+  #Services{
+    width: 135%;
+  }
+  .serv p{
+    font-size: 20px;
+  }
+  .courses{
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .col{
+    height: 300px;
+    width: 400px;
+  }
+  .col p{
+    font-size: 16px;
+  
+  }
+  .lastc .col{
+    height: 300px;
+    left: 163px;
+  }
+
+  #About{
+    width: 114%;
+  }
+  .describe p{
+    font-size: 18px;
+  }
+  .log{
+    right: 100px;
+  }
+  .oga{
+    right:170px
+  }
+
+  #contactUs{
+    width: 153%;
+    padding-bottom: 30px;
+  }
+  .details p{
+    font-size: 16.2px;
+  }
+  #footer{
+    width: 153%;
+  }
+  .abt{
+    width: 290px;
+  }
 }
 
 @media screen and (max-width:480px){
@@ -875,7 +959,6 @@
     height: 280px;
     width: 420px;
     margin-top: 100px;
-    position: relative;
     right: 40px;
   }
 
