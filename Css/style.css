@@ -944,7 +944,7 @@
     width: 280px;
   }
   .contform ul input{
-    padding-right: 15px;
+    padding-right: 0px;
   }
   .contform textarea{
     width: 400px;
