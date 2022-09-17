@@ -989,7 +989,8 @@
     left: 98px;
   }
   .navlinks a{
-    padding: 0px;
+    margin-left: -8px;
+    padding: 3px;
   }
 }
 
@@ -1007,7 +1008,72 @@
     left: 94px;
   }
   .navlinks a{
-    padding: 0px;
+    padding: 2px;
+    margin-left: -8px;
+  }
+}
+
+
+@media screen and (max-width:410px){
+  .waveback{
+    width: 204.5%;
+    height: 36rem;
+  }
+  #head{
+    width: 204.5%;
+  }
+  .logo{
+    height: 60px;
+    width: 80px;
+    margin-left: 0px;
+  }
+  .sub{
+    left: 88px;
+  }
+  .motto{
+    left: 90px;
+  }
+  .navlinks a{
+    margin-left: -8px;
+  }
+  .exp{
+    width: 400px;
+  }
+  #contactUs{
+    width: 204.5%;
+  }
+}
+
+
+@media screen and (max-width:407px){
+  .waveback{
+    width: 204.5%;
+  }
+  #head{
+    width: 204.5%;
+    margin-bottom: -80px;
+  }
+  .logo{
+    height: 50px;
+    width: 60px;
+  }
+  .sub{
+    bottom: 35px;
+    left: 70px;
+  }
+  .motto{
+    bottom: 65px;
+    left: 72px;
+  }
+  .navlinks a{
+    padding: 5px;
+    margin-left: -8px;
+  }
+  .exp{
+    width: 400px;
+  }
+  #contactUs{
+    width: 204.5%;
   }
 }
 
@@ -1225,10 +1291,4 @@
     width: 295px;
   }
     /* footer 320px MQ ends */
-
-
-
-
-
-
 }
