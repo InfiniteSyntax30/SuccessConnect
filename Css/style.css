@@ -1290,11 +1290,14 @@ display: none;
     width: 221%;
     height: 140rem;
   }
+  .courses{
+   margin-left: 0px;
+  }
   .col{
-    width: 380px;
+    width: 390px;
   }
   .lastc .siwes{
-    width: 380px;
+    width: 390px;
   }
   #About{
     width: 221%;
@@ -1447,7 +1450,11 @@ display: none;
     padding-right: 8px;
   }
 }
-
+@media screen and (max-width:413px){
+  .courses{
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width:407px){
  .col{
   width: 380px;
