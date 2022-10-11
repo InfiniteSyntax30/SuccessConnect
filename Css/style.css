@@ -1275,6 +1275,29 @@ display: none;
     /* footer 480px MQ ends */
 }
 
+@media screen and (max-width:425px){
+  .waveback{
+    width: 221%;
+    height: 46rem;
+  }
+  #Services{
+    width: 221%;
+    height: 140rem;
+  }
+  #About{
+    width: 221%;
+  }
+  #contactUs{
+    width: 221%;
+  }
+  #footer{
+    width: 221%;
+  }
+
+
+
+
+}
 @media screen and (max-width:421px){
   .waveback{
     width: 221%;
