@@ -10,7 +10,6 @@
 
 }
 .header{
-  /* margin-bottom: -44px; */
   position: fixed;
   width: 100%;
   height: 15%;
@@ -400,7 +399,7 @@ display: none;
 #contactUs{
   background: #b4c4e4 url(../Assets/slant.png);
   margin-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .contacthead h1{
   font-size: 30px;
@@ -411,71 +410,47 @@ display: none;
   text-align: center;
 }
 .details{
-  padding-left: 80px;
+  text-align: center;
 }
 .details .leave, .details .cont{
   font-size: 25px;
-  border-bottom: 3px solid #004de6;
-  border-radius: 3px;
 }
-.details .leave{
-  width: 270px;
+.details .leave::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 300px;
+  margin-top: 40px;
+  right: 525px;
+  border-radius: 4px;
+  background: #004de6;
 }
-.details .cont{
-  width: 180px;
+.details .cont::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 250px;
+  margin-top: 40px;
+  right: 550px;
+  border-radius: 4px;
+  background: #004de6;
 }
 .details p{
   font-size: 16px;
   color: black;
 }
-.details ol, .contform ul{
+.details ol{
   list-style: none;
-  margin-left: -27px;
 }
-.content{
-  display: flex;
-  justify-content: space-between;
-  padding-right: 80px;
-}
-.contform ul input{
-  padding: 10px;
-  padding-right: 70px;
+.submit{
+  padding: 10px 50px;
   border-radius: 4px;
-}
-.contform ul input::placeholder{
-  font-size: 15px;
-  text-align: left;
-}
-.contform .move{
-  padding-bottom: 20px;
-}
-.contform .ski{
-  padding-bottom: 40px;
-}
-.contform textarea{
-  width: 500px;
-  height: 200px;
-  border-radius: 4px;
-}
-.contform textarea::placeholder{
-  font-size: 18px;
-  padding-left: 10px;
-}
-.contform .submit{
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 4px;
-  background: #4a3d55;
-  color: #f1f1f1;
   text-align: center;
+}
+.submit a{
+  background: #02023b;
+  color: #f1f1f1;
   cursor: pointer;
-}
-.contform .mit{
-  margin-left: 385px;
-}
-.mit a{
   text-decoration: none;
 }
 
@@ -607,6 +582,13 @@ display: none;
    #contactUs{
     width: 103.25%;
     padding-bottom: 30px;
+  }
+  .details .leave::after{
+    right: 430px;
+
+  }
+  .details .cont::after{
+    right: 455px;
   }
 
   /* Contact 1200px MQ ends */
@@ -758,23 +740,16 @@ display: none;
   .details p{
     font-size: 20px;
   }
-  .content{
-    padding-right: 40px;
+  .details .leave::after{
+    right: 235px;
+    background: #004de6;
   }
-  .details ol, .contform ul{
-    margin-left: -25px;
+  .details .cont::after{
+    right: 255px;
+    background: #004de6;
   }
-  .contform ul input{
-    padding-right: 65px;
-  }
-  .contform textarea::placeholder{
+  .submit a{
     font-size: 18px;
-  }
-  .contform .submit{
-    font-size: 14px;
-  }
-  .contform .mit{
-    margin-left: 375px;
   }
 
     /* Contact 1024px MQ ends */
@@ -930,24 +905,20 @@ display: none;
     width: 128.2%;
     padding-bottom: 40px;
   }
-  .details{
-    padding-right: 100px;
-  }
   .details p{
-    font-size: 16px;
+    font-size: 18px;
   }
-  .contform ul input{
-    padding-right: 30px;
+  .details .leave::after{
+    right: 100px;
+    background: #004de6;
   }
-  .contform textarea{
-    width: 430px;
-    height: 200px;
-    border-radius: 4px;
+  .details .cont::after{
+    right: 125px;
+    background: #004de6;
   }
-  .contform .mit{
-    margin-left: 310px;
+  .submit a{
+    font-size: 18px;
   }
-
     /* Contact 768px MQ ends */
 
     /* footer 768px MQ starts */
@@ -1047,6 +1018,17 @@ display: none;
   }
   .details p{
     font-size: 20px;
+  }
+  .details .leave::after{
+    right: -115px;
+    background: #004de6;
+  }
+  .details .cont::after{
+    right: -90px;
+    background: #004de6;
+  }
+  .submit a{
+    font-size: 19px;
   }
   #footer{
     width: 177.3%;
@@ -1245,14 +1227,17 @@ display: none;
   .contacthead h1{
     font-size: 40px;
   }
-  .details{
-    padding-right: 80px;
-  }
   .details p{
-    font-size: 25px;
+    font-size: 22px;
   }
-  .contform .mit{
-    margin-left: 0px;
+  .details .leave::after{
+    right: -185px;
+  }
+  .details .cont::after{
+    right: -165px;
+  }
+  .submit a{
+    font-size: 20px;
   }
 
     /* Contact 480px MQ ends */
@@ -1304,6 +1289,20 @@ display: none;
   }
   #contactUs{
     width: 221%;
+  }
+  .details p{
+    font-size: 24px;
+  }
+  .details .leave::after{
+    right: -215px;
+    background: #004de6;
+  }
+  .details .cont::after{
+    right: -200px;
+    background: #004de6;
+  }
+  .submit a{
+    font-size: 22px;
   }
   #footer{
     width: 221%;
@@ -1411,10 +1410,19 @@ display: none;
     width: 221%;
   }
   .details p{
-    font-size: 27px
+    font-size: 26px;
   }
-  .contform .mit{
-    margin-left: 0px;
+  .details .leave, .details .cont{
+    font-size: 27px;
+  }
+  .details .leave::after{
+    right: -220px;
+  }
+  .details .cont::after{
+    right: -200px;
+  }
+  .submit a{
+    font-size: 24px;
   }
   #footer{
     width: 221%;
@@ -1462,6 +1470,12 @@ display: none;
  .lastc .siwes{
   width: 380px;
  }
+ .detials p{
+  font-size: 26px;
+ }
+ .details .leave, .details .cont{
+  font-size: 28px;
+}
  .abt{
   padding-left: 60px;
   width: 400px;
@@ -1529,6 +1543,21 @@ display: none;
   #contactUs{
     width: 237.2%;
   }
+  .details p{
+    font-size: 26px;
+  }
+  .details .leave, .details .cont{
+    font-size: 28px;
+  }
+  .details .leave::after{
+    right: -245px;
+  }
+  .details .cont::after{
+    right: -220px;
+  }
+  .submit a{
+    font-size: 25px;
+  }
   
   #footer{
     width: 237.2%;
@@ -1578,8 +1607,14 @@ display: none;
   #contactUs{
     width: 283%;
   }
-  .details p{
-    font-size: 28px;
+  .details .leave::after{
+    right: -308px;
+  }
+  .details .cont::after{
+    right: -285px;
+  }
+  .submit a{
+    font-size: 26px;
   }
   #footer{
     width: 283%;
