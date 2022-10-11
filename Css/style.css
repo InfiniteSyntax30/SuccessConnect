@@ -1,70 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+
 /* header styling starts */
-#head{
-  background: linear-gradient(-50deg, #004de6 30%, #28166f 40%, #28166f 100%);;;
-  margin-bottom: -95px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trirong';
+
+}
+.header{
+  /* margin-bottom: -44px; */
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  padding-top: 50px;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  background: #02023b;
 }
 .logo{
-  height: 80px;
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+.logo img{
+  padding: 5px;
+  padding-top: 20px;
+  height: 100px;
   width: 120px;
-  margin-top: 20px;
-  margin-left: 10px;
-  padding-right: 8px;
-  }
+}
+.logo h1{
+  font-size: 35px;
+}
+.logo p{
+  font-size: 18px;
+  position: relative;
+  left: 120px;
+  bottom: 50px;
+  font-style: italic;
+}
+.navlinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0.5s;
+}
+.menu li{
+  list-style: none;
+}
+.menu li a{
+  color: #fff;
+  width: 140px;
+  text-decoration: none;
+  display: block;
+  padding: 40px 20px;
+  font-size: 18px;
+  line-height: 1;
+  transition: 0.3s;
+}
+.menu li a:hover{
+  box-shadow: 0 -5px 0px #fff inset,
+  500px 0 0 rgba(255,255,255,0.03) inset;
+  padding: 35px 20px 20px 25px ;
+  cursor: pointer;
+}
 
-  .header{
-    display:flex;
-  }
-  .title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .maintit, .sub, .motto{
-    display:flex;
-    color: antiquewhite;
-  }
-  .maintit h2{
-    margin-top: 15px;
-    font-size: 37px;
-  }
-  .maintit h3{
-    position: relative;
-    left: 300px;
-    top: 5px;
-  }
-  .sub{
-    position: relative;
-    left: 138px;
-    bottom: 45px;
-    font-size: 30px;
-  }
-  .sub h3{
-    font-size: 30px;
-  }
-  .motto{
-    position: relative;
-    left: 138px;
-    bottom: 75px;
-  }
-  .motto p{
-    font-style: italic;
-    font-size: 13px;
-  }
-  .navlinks ul{
-    display: flex;
-    list-style: none;
-    margin-top: 45px;
+.hamburger{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width:30px;
+  height: 4px;
+  background:#fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+.hamburger::before, .hamburger::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hamburger::before{
+  top: -10px;
+  width: 20px;
+}
+.hamburger::after{
+  top: 10px;
+  width: 20px;
+}
+.toggle-menu{
+  position: absolute;
+  width: 30px;
+  height: 10%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+.hamburger,.toggle-menu{
+display: none;
+}
+.navlinks input:checked ~ .hamburger{
+  background: transparent;
+}
+.navlinks input:checked ~ .hamburger::before{
+  top:0;
+  transform: rotate(-45deg);
+  width: 30px;
+  transition: all ease-in-out 0.2s;
+}
+.navlinks input:checked ~ .hamburger::after{
+  top:0;
+  transform: rotate(45deg);
+  width: 30px;
+  transition: all ease-in-out 0.2s;
+}
+.navlinks input:checked ~ .menu{
+  right: -20px;
+  box-shadow: -20px 0  40px rgba(0,0,0,0.3);
+}
 
-  }
-  .navlinks a{
-    text-decoration: none;
-    font-size: 18px;
-    color: antiquewhite;
-    padding: 15px;
-    transition: all 0.2s ease-in-out;
-  }
-  .navlinks a:hover{
-    color: rgb(177, 16, 240);
-    cursor: pointer;
-  }
 
   /* header styling ends */
 
@@ -77,7 +147,7 @@
 .waveback{
   position: relative;
   width: 100%;
-  height: 40rem;
+  height: 43rem;
   background: linear-gradient(-50deg, #58c3ff 0, #004de6 40%, #003bb1 100%);
   overflow: hidden;
 }
@@ -113,6 +183,7 @@
   z-index: 997;
   opacity: 0.7;
   animation-delay: -5s;
+  z-index: 9;
 }
 @keyframes animate{
   0%{
@@ -137,53 +208,48 @@
 .start{
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 .orange{
-  color: rgb(241, 50, 29);
+  color: #f1321d;
 }
 .banleft h2{
   width: 650px;
   margin-left: 80px;
-  font-family: sans-serif;
   font-size: 36px;
-  font-weight: 800;
-  letter-spacing: 0.8px;
+  letter-spacing: 2px;
   line-height: 50px;
   text-align: left;
-  margin-top: 120px;
+  margin-top: 80px;
   color: white;
 }
 .banleft p{
-  font-family: sans-serif;
   color: white;
   width: 620px;
   font-size: 20px;
   line-height: 38px;
-  font-weight: 600;
   text-transform: capitalize;
   margin-top: 20px;
   margin-left: 80px;
-  margin-bottom: 40px;
 }
 .button a{
   font-size: 14px;
-  font-family: sans-serif;
   text-decoration: none;
   color: white;
-  background: rgb(241, 50, 29);
+  background: #02023b;
   padding: 15px 20px;
   border-radius: 8px;
   margin-left: 80px;
   transition: all 0.5s ease-in-out ;
 }
 .button a:hover{
-  background: #0ff335;
+  background: #f1321d;
 }
 
 .exp{
   height: 386px;
   width: 570px;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-right: 50px;
 }
 
@@ -199,9 +265,6 @@
 }
 .serv{
   padding-top: 40px;
-}
-.serv h2, .serv p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .serv h2{
   font-size: 30px;
@@ -244,9 +307,8 @@
 .col h6{
   margin-top: 15px;
   text-transform: uppercase;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
-  color: #1a0f33;
+  color: #02023b;
   margin: 10px 0px;
 }
 .col p{
@@ -267,21 +329,24 @@
 /* Services styling ends */
 
 /* About styling starts */
-.describe h1, .team h2{
-  color: #1a0f33;
-}
-.describe h1{
-  font-size: 30px;
-}
+
 #About{
+  background: #ffff;
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 120px;
   padding-bottom: 20px;
 
 }
+.describe h1, .team h2{
+  color: #02023b;
+}
+.describe h1{
+  font-size: 30px;
+}
 .describe p{
   color:#4a3d55;
+  line-height: 28px;
   font-size: 16px;
 }
 
@@ -295,7 +360,8 @@
   bottom: 25px;
 }
 .team h2{
-  font-size: 25px;
+  padding-top: 20px;
+  font-size: 27px;
 }
 .teamcontent{
   display: flex;
@@ -305,8 +371,7 @@
 .oga h3, .log h3, .oga h4, .log h4{
   position: relative;
   margin-top: -20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #1a0f33
+  color: #02023b
 }
 .oga h3{
   left:260px;
@@ -316,11 +381,11 @@
 }
 .oga h4{
   left:350px;
-  margin-top: -30px;
+  margin-top: -25px;
 }
 .log h4{
   left: 265px;
-  margin-top: -30px;
+  margin-top: -25px;
 }
 .oga, .log{
   position: relative;
@@ -338,7 +403,6 @@
   padding-bottom: 20px;
 }
 .contacthead h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   color: #ffff;
   background: #004de6;
@@ -424,23 +488,23 @@
 }
 .abt{
   padding-left: 80px;
-  width: 400px;
+  width: 450px;
 }
 .abt h3, .add h3{
   width: 100px;
 }
 .end h3{
   text-align: center;
-  color: #1a0f33;
+  color: #02023b;
   border-bottom: 3px solid #004de6;
   border-radius: 3px;
 }
 .abt p{
-  font-size: 14px;
+  font-size: 15px;
   color: #4a3d55;
 }
 .end{
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -472,68 +536,118 @@
 
 /* footer styling ends */
 
-/* COMP PAGE STYLING STARTS*/
-.complete h2{
-  text-transform: capitalize;
-  color: #004de6;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 50px;
-  text-shadow: 2px 2px 2px red;
-}
-/* COMP PAGE STYLING ENDS */
-
 
 
 /* Media Queries */
 
+@media screen and (max-width:1200px) {
+  .waveback{
+    position: relative;
+    width: 103.25%;
+    height: 43rem;
+  }
+
+  .header{
+    margin-bottom: -60px;
+    width: 103.25%;
+
+  }
+  .logo h1{
+    font-size: 30px;
+  }
+  .menu{
+    margin-right: 20px;
+  }
+  .menu li a{
+    width: 140px;
+    padding: 0px 0px;
+    font-size: 17px;
+  }
+  .menu li a:hover{
+    box-shadow: 0 -5px 0px #fff inset,
+    300px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 25px;
+    cursor: pointer;
+  }
+
+  /* Services 1200px MQ starts */
+
+   #Services{
+    width: 103.25%;
+  }
+  .lastc .col{
+    width: 370px;
+    left: 265px;
+  }
+
+  /* Services 1200px MQ ends */
+
+  /* About 1200px MQ starts */
+
+  #About{
+    width: 100%;
+  }
+  .describe h1{
+    font-size: 35px;
+  }
+  .describe p{
+    width: 110%;
+    font-size: 17px;
+  }
+  .team h2{
+    font-size: 28px;
+  }
+  .teamcontent{
+    margin-top: 20px;
+  }
+  /* About 1200px MQ ends */
+
+  /* Contact 1200px MQ starts */
+
+   #contactUs{
+    width: 103.25%;
+    padding-bottom: 30px;
+  }
+
+  /* Contact 1200px MQ ends */
+
+   /* footer 1200px MQ starts */
+
+   #footer{
+    width: 103.25%;
+  }
+
+    /* footer 1200px MQ ends */
+
+}
+
+
+
 @media screen and (max-width:1024px) {
   .waveback{
     position: relative;
-    width: 116%;
-    height: 38rem;
+    width: 119.7%;
+    height: 44rem;
   }
     /* Head 1024px MQ Starts */
   #head{
     width: 116%;
-    margin-bottom: -80px;
   }
-  .logo{
-    height: 60px;
-    width: 80px;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-right: 8px;
+  .menu li a{
+    color: #fff;
+    width: 140px;
+    text-decoration: none;
+    display: block;
+    padding: 40px 20px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
   }
-  .maintit h2{
-    margin-top: 15px;
-    font-size: 29px;
-  }
-  .maintit h3{
-    left: 380px;
-    top: 5px;
-  }
-  .sub{
-    left: 108px;
-    bottom: 38px;
-  }
-  .sub h3{
-    font-size: 25px;
-  }
-  .motto{
-    left: 108px;
-    bottom: 68px;
-  }
-  .motto p{
-    font-size: 14px;
-  }
-  .navlinks ul{
-    margin-left: 100px;
-  }
-  .navlinks a{
-    font-size: 15px;
-    padding: 5px;
+  .menu li a:hover{
+    box-shadow: 0 -5px 0px #fff inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 35px 20px 27px 25px ;
+    cursor: pointer;
   }
     /* Head 1024px MQ ends */
 
@@ -543,29 +657,24 @@
     justify-content: space-between;
   }
   .banleft h2{
-    margin-left: 60px;
-    font-size: 34px;
-    font-weight: 800;
-    letter-spacing: 0.6px;
-    line-height: 45px;
+    width: 600px;
+    margin-left: 80px;
   }
   .banleft p{
-    width: 600px;
-    font-size: 17px;
-    line-height: 38px;
-    font-weight: 600;
-    margin-left: 60px;
+    width: 550px;
+    font-size: 18px;
+    margin-left: 80px;
+    padding-bottom: 20px;
   }
   .button a{
-    font-size: 15px;
-    padding: 10px 15px;
-    margin-left: 60px;
+    font-size: 17px;
+    margin-left: 80px;
 
   }
   .exp{
     height: 300px;
     width: 480px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
     /* Home 1024px MQ ends */
@@ -573,29 +682,40 @@
     /* Services 1024px MQ starts */
 
   #Services{
-    width: 106%;
+    width: 119.7%;
+  }
+  .serv h2{
+    font-size: 35px;
+  }
+  .serv p{
+    font-size: 20px;
   }
   .courses{
     margin-left: 50px;
     margin-right: 50px;
   }
   .col p{
-    font-size: 14px;
+    font-size: 17px;
   }
   .lastc .col{
     width: 370px;
-    left: 310px;
+    left: 330px;
   }
     /* Services 1024px MQ ends */
 
     /* About 1024px MQ starts */
 
   #About{
-    width: 92%;
+    width: 115%;
+  }
+  .describe h1{
+    font-size: 40px;
   }
   .describe p{
-    width: 110%;
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .team h2{
+    font-size: 35px;
   }
   .backline{
     position: relative;
@@ -609,7 +729,7 @@
   .teamcontent{
     position: relative;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .oga h3, .log h3, .oga h4, .log h4{
     margin-top: 5px;
@@ -628,7 +748,7 @@
     /* Contact 1024px MQ starts */
 
   #contactUs{
-    width: 116%;
+    width: 119.7%;
     margin-top: 30px;
     padding-bottom: 30px;
   }
@@ -636,7 +756,7 @@
     padding-left: 60px;
   }
   .details p{
-    font-size: 16px;
+    font-size: 20px;
   }
   .content{
     padding-right: 40px;
@@ -661,13 +781,14 @@
 
     /* footer 1024px MQ starts */
   #footer{
-    width: 116%;
+    width: 119.7%;
   }
   .abt{
+    width: 500px;
     padding-left: 60px;
   }
   .abt p, .quick ol a, .add p{
-    font-size: 16px;
+    font-size: 18px;
   }
   .add ol{
     list-style: none;
@@ -685,54 +806,79 @@
 @media screen and (max-width:768px){
   .waveback{
     position: relative;
-    width: 125%;
-    height: 36rem;
+    width: 128.2%;
+    height: 40rem;
   }
   /* Head 768px MQ Starts */
-  #head{
-    width: 125%;
+
+  .header{
+    width: 110.6%;
   }
-  .maintit h2{
+  .logo h1{
+    font-size: 45px;
+  }
+  .logo p{
     font-size: 25px;
   }
-  .maintit h3{
-    left: 260px;
-    top: 5px;
+  .hamburger,.toggle-menu{
+    margin-top: -60px;
+    margin-right: 140px;
+    display: block;
   }
-  .sub h3{
+  .menu{
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: -270px;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    background: #02023b;
+    padding-top: 115px;
+
+  }
+  .menu li{
+    width: 100%;
+  }
+  .menu li a{
+    width: 200px;
+    padding: 30px;
     font-size: 24px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
   }
-  .motto p{
-    font-size: 15px;
+  .menu li a:hover{
+    box-shadow: 0 1px 0 #fff inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 30px;
+    cursor: pointer;
   }
-  .navlinks ul{
-    margin-left: 0px;
-  }
-  .navlinks a{
-    font-size: 15px;
-    padding: 0px;
-  }
+
     /* Head 768px MQ ends */
 
     /* Home 768px MQ starts*/
 
   .banleft h2{
-    margin-top: 100px;
-    font-size: 30px;
-    letter-spacing: 0px;
-    width: 500px;
+    margin-top: 60px;
+    font-size: 42px;
+    letter-spacing: 2px;
+    width: 800px;
 
   }
   .banleft p{
-    width: 520px;
-    font-size: 16px;
-    line-height: 34px;
+    margin-top: 40px;
+    width: 460px;
+    font-size: 18px;
+    line-height: 35px;
     font-weight: 500;
   }
   .exp{
     height: 280px;
-    width: 370px;
-    margin-top: 82px;
+    width: 420px;
+    position:relative;
+    top: 80px;
+    right: 350px;
   }
 
     /* Home 768px MQ ends */
@@ -740,35 +886,37 @@
     /* Services 768px MQ starts */
 
   #Services{
-    width: 112%;
+    width: 128%;
   }
   .serv p{
-    font-size: 17px;
+    font-size: 19px;
   }
   .courses{
     margin-left: 30px;
-    margin-right: 70px;
+    margin-right: 30px;
   }
   .col{
+    height: 300px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
   .col p{
-    font-size: 14px;
+    font-size: 15px;
   }
   .lastc .col{
     width: 370px;
-    left: 188px;
+    left: 216px;
   }
     /* Services 768px MQ ends */
 
     /* About 768px MQ starts */
 
   #About{
-    width: 93%;
+    width: 125%;
+
   }
   .describe p{
-    width: 120%;
+    line-height: 30px;
   }
   .oga, .log{
     right: 120px;
@@ -779,7 +927,7 @@
     /* Contact 768px MQ starts */
 
   #contactUs{
-    width: 125%;
+    width: 128.2%;
     padding-bottom: 40px;
   }
   .details{
@@ -804,60 +952,63 @@
 
     /* footer 768px MQ starts */
   #footer{
-    width: 125%;
+    width: 128.2%;
   }
   .abt{
     padding-left: 60px;
     width: 350px;
   }
   .abt p{
-    font-size: 15px;
+    font-size: 17px;
   }
   .add{
     padding-right: 10px;
   }
-  
+
     /* footer 768px MQ ends */
 }
 
 @media screen and (max-width:577px){
   .waveback{
-    width: 153%;
+    width: 177.3%;
   }
-  #head{
-    width: 153%;
-    margin-bottom: -85px;
+  .header{
+    height: 12%;
   }
-  .maintit h3{
-    left: 200px;
-  }
-  .navlinks a{
-    margin-left: -70px;
-    padding: 26.5px;
-    font-size: 15px;
-  }
-  .motto p{
-    font-size: 17px;
+  .logo h1{
+    font-size: 47px;
   }
   .banleft p{
-    width:410px;
-    font-size: 17px;
-    line-height: 32px;
-    font-weight: 500;
+    width:500px;
+    font-size: 20px;
+    line-height: 36px;
   }
   .exp{
     height: 270px;
-    width: 390px;
-    margin-top: 120px;
+    width: 450px;
     position: relative;
-    right: 50px;
+    top: 80px;
+    right: 300px;
+  }
+  .button a{
+    font-size: 20px;
+  }
+  .menu{
+    width:300px;
+    height: 100%;
+    right: -320px;
+    padding-top: 140px;
+  }
+  .menu li a{
+    width: 200px;
+    font-size: 27px;
   }
 
   #Services{
-    width: 135%;
+    width: 177.3%;
   }
   .serv p{
-    font-size: 20px;
+    font-size: 22px;
   }
   .courses{
     margin-left: 20px;
@@ -865,101 +1016,114 @@
   }
   .col{
     height: 300px;
-    width: 400px;
+    width: 420px;
   }
   .col p{
-    font-size: 16px;
-  
+    font-size: 18px;
+
   }
   .lastc .col{
     height: 300px;
-    left: 163px;
+    left: 240px;
   }
 
   #About{
-    width: 114%;
+    width: 177.3%;
   }
   .describe p{
-    font-size: 18px;
+    font-size: 25px;
+    line-height: 37px;
   }
   .log{
-    right: 100px;
+    right: 150px;
   }
   .oga{
     right:170px
   }
 
   #contactUs{
-    width: 153%;
+    width: 177.3%;
     padding-bottom: 30px;
   }
   .details p{
-    font-size: 16.2px;
+    font-size: 20px;
   }
   #footer{
-    width: 153%;
+    width: 177.3%;
   }
   .abt{
-    width: 290px;
+    width: 420px;
+  }
+  .abt p{
+    font-size: 18.5px;
   }
 }
 
 @media screen and (max-width:480px){
   .waveback{
-    width: 204%;
-    height: 36rem;
+    width: 205%;
+    height: 48rem;
   }
 
   /* Head 480px MQ Starts */
   #head{
-    width: 204%;
-    margin-bottom: -90px;
+    width: 205%;
   }
-  .maintit h2{
-    font-size: 20px;
+  .header{
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    background: rgb(2, 2, 59);
   }
-  .maintit h3{
-    left: 260px;
-    top: 5px;
+  .hamburger,.toggle-menu{
+    display: block;
+    margin-top: -60px;
+    margin-right: 60px;
   }
-  .sub{
-    bottom: 45px;
+  .menu{
+    width: 350px;
+    right: -370px;
+    background: rgb(2, 2, 59);
+    padding-top: 140px;
+
   }
-  .sub h3{
-    font-size: 19px;
+  .menu li a{
+    width: 200px;
+    padding: 30px;
+    font-size: 27px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
   }
-  .motto{
-    bottom: 76px;
+  .menu li a:hover{
+    box-shadow: 0 1px 0 #fff inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 30px;
+    cursor: pointer;
   }
-  .motto p{
-    font-size: 16px;
-  }
-  .navlinks ul{
-    margin-left: -10px;
-  }
- 
     /* Head 480px MQ ends */
 
     /* Home 480px MQ starts*/
 
   .banleft h2{
-    margin-top: 100px;
-    font-size: 25px;
+    margin-top: 90px;
+    font-size: 45px;
     letter-spacing: 0px;
-    width: 450px;
+    width: 800px;
 
   }
   .banleft p{
-    width:420px;
-    font-size: 16px;
-    line-height: 31px;
-    font-weight: 500;
+    width:510px;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .button a{
+    font-size: 22px;
   }
   .exp{
-    height: 280px;
-    width: 420px;
+    height: 300px;
+    width: 470px;
     margin-top: 100px;
-    right: 40px;
+    right: 350px;
   }
 
     /* Home 480px MQ ends */
@@ -967,46 +1131,107 @@
     /* Services 480px MQ starts */
 
   #Services{
-    width: 180%;
+    width: 205%;
+    height: 138rem;
+  }
+  .serv h2{
+    font-size: 50px;
+    text-align: center;
+    color: #02023b;
   }
   .serv p{
-    font-size: 20px;
+    font-size: 27px;
+    line-height: 38px;
+    padding-bottom:20px ;
+  }
+  .first, .second, .third{
+    display: flex;
+    flex-direction: column;
   }
   .courses{
-    margin-left: 30px;
-    margin-right: 30px;
+    align-items: center;
   }
   .col{
     height: 320px;
     width: 400px;
-    margin-right: 15px;
     margin-bottom: 15px;
   }
-  .col p{
-    font-size: 16px;
-    color: black;
+  .col h6{
+    color: #02023b;
+    font-size: 24px;
   }
-  .lastc .col{
-    height: 290px;
-    left: 163px;
+  .col p{
+    font-size: 24px;
+    color: #4a3d55;
+  }
+  .first .ms,    .lastc .siwes{
+    position: relative;
+    left: 430px;
+    bottom: 337px;
+  }
+  .first .graphic{
+    position: relative;
+    bottom: 325px;
+  }
+  .second .UI{
+    position: relative;
+    left: 430px;
+    bottom: 660px;
+  }
+  .second .web{
+    position: relative;
+    bottom: 650px;
+  }
+  .second .network{
+    position: relative;
+    left: 430px;
+    bottom: 61.7rem;
+  }
+  .third .sofdev{
+    position: relative;
+    bottom: 60.8rem;
+  }
+  .third .mobdev{
+    position: relative;
+    left: 430px;
+    bottom: 81.9rem;
+  }
+  .third .strain{
+    position: relative;
+    bottom: 81rem;
+  }
+  .lastc .siwes{
+    position: relative;
+    left: 430px;
+    bottom: 101.9rem;
+    height: 400px;
+    width: 400px
   }
     /* Services 480px MQ ends */
 
     /* About 480px MQ starts */
 
   #About{
-    width: 150%;
-    
+    width: 205%;
+  }
+  .describe h1{
+    font-size: 50px;
   }
   .describe p{
-    font-size: 20px;
-    width: 120%;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .team h2{
+    font-size: 40px;
+  }
+  .teamcontent{
+    margin-top: 50px;
   }
   .log{
-    right: 120px;
+    right: 150px;
   }
   .oga{
-    right:160px
+    right:150px
   }
 
     /* About 480px MQ ends */
@@ -1014,228 +1239,244 @@
     /* Contact 480px MQ starts */
 
   #contactUs{
-    width: 204%;
+    width: 205%;
     padding-bottom: 30px;
+  }
+  .contacthead h1{
+    font-size: 40px;
   }
   .details{
     padding-right: 80px;
   }
   .details p{
-    font-size: 16px;
-  }
-  .details li p{
-    width: 280px;
-  }
-  .contform ul input{
-    padding-right: 0px;
-  }
-  .contform textarea{
-    width: 400px;
-    height: 200px;
-    border-radius: 4px;
+    font-size: 25px;
   }
   .contform .mit{
-    margin-left: 270px;
+    margin-left: 0px;
   }
 
     /* Contact 480px MQ ends */
 
     /* footer 480px MQ starts */
   #footer{
-    width: 204%;
+    width: 205%;
   }
   .abt{
     padding-left: 60px;
-    width: 295px;
+    width: 400px;
   }
   .abt p{
-    font-size: 15px;
+    font-size: 20px;
   }
   .add{
     padding-right: 10px;
   }
-  
+
     /* footer 480px MQ ends */
 }
 
-
-@media screen and (max-width:418px){
-  .logo{
-    height: 60px;
-    width: 80px;
-    margin-left: 10px;
-  }
-  .sub{
-    left: 98px;
-  }
-  .motto{
-    left: 98px;
-  }
-  .navlinks a{
-    margin-left: -8px;
-    padding: 3px;
-  }
-}
-
-
-@media screen and (max-width:413px){
-  .logo{
-    height: 60px;
-    width: 80px;
-    margin-left: 5px;
-  }
-  .sub{
-    left: 93px;
-  }
-  .motto{
-    left: 94px;
-  }
-  .navlinks a{
-    padding: 2px;
-    margin-left: -8px;
-  }
-}
-
-
-@media screen and (max-width:410px){
+@media screen and (max-width:421px){
   .waveback{
-    width: 204.5%;
-    height: 36rem;
+    width: 221%;
+    height: 48rem;
   }
-  #head{
-    width: 204.5%;
+  .hamburger,.toggle-menu{
+    margin-right: 35px;
   }
-  .logo{
-    height: 60px;
-    width: 80px;
+  .logo p{
+    font-size: 30px;
+  }
+  .menu{
+    width: 320px;
+    right: -340px;
+    background: rgb(2, 2, 59);
+    padding-top: 140px;
+
+  }
+  .menu li a{
+    width: 220px;
+    padding: 30px;
+    font-size: 30px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+  }
+
+  .banleft p{
+    width:480px;
+    font-size: 24px;
+  }
+  .exp{
+    width: 450px;
+    right: 360px;
+  }
+  #Services{
+    width: 221%;
+    height: 140rem;
+  }
+  .courses{
+    margin-left: 10px;
+    text-align: center;
+  }
+  .col{
+    margin-bottom: 17px;
+    width: 390px;
+  }
+  .first .ms,    .lastc .siwes{
+    position: relative;
+    left: 420px;
+    bottom: 337px;
+  }
+  .second .UI{
+    position: relative;
+    left: 420px;
+    bottom: 660px;
+  }
+  .second .network{
+    position: relative;
+    left: 420px;
+    bottom: 61.5rem;
+  }
+  .third .mobdev{
+    position: relative;
+    left: 420px;
+    bottom: 81.9rem;
+  }
+  .lastc .siwes{
+    position: relative;
+    left: 420px;
+    bottom: 101.9rem;
+    height: 400px;
+    width: 390px
+  }
+  #About{
+    width: 221%;
+  }
+  .describe h1{
+    font-size: 55px;
+  }
+  .describe p{
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .team h2{
+    font-size: 45px;
+  }
+  .teamcontent{
+    margin-top: 50px;
+  }
+  .log{
+    right: 150px;
+  }
+  .oga{
+    right:150px
+  }
+  #contactUs{
+    width: 221%;
+  }
+  .details p{
+    font-size: 27px
+  }
+  .contform .mit{
     margin-left: 0px;
   }
-  .sub{
-    left: 88px;
+  #footer{
+    width: 221%;
   }
-  .motto{
-    left: 90px;
+  .abt{
+    padding-left: 60px;
+    width: 450px;
   }
-  .navlinks a{
-    margin-left: -8px;
+  .abt p{
+    font-size: 22px;
   }
-  .exp{
-    width: 400px;
+  .abt h3, .add h3{
+    width: 120px;
   }
-  #contactUs{
-    width: 204.5%;
+  .end h3{
+    font-size: 25px;
+    text-align: center;
+    color: #02023b;
+    border-bottom: 3px solid #004de6;
+    border-radius: 3px;
+  }
+  .quick ol a{
+    font-size: 20px;
+  }
+  .quick ol a:hover{
+    color: #02023b;
+  }
+  .add p{
+    margin-left: -24px;
+    font-size: 19px;
+  }
+  .add{
+    padding-right: 8px;
   }
 }
 
-
 @media screen and (max-width:407px){
-  .waveback{
-    width: 204.5%;
-  }
-  #head{
-    width: 204.5%;
-    margin-bottom: -80px;
-  }
-  .logo{
-    height: 50px;
-    width: 60px;
-  }
-  .sub{
-    bottom: 35px;
-    left: 70px;
-  }
-  .motto{
-    bottom: 65px;
-    left: 72px;
-  }
-  .navlinks a{
-    padding: 5px;
-    margin-left: -8px;
-  }
-  .exp{
-    width: 400px;
-  }
-  #contactUs{
-    width: 204.5%;
-  }
+ .col{
+  width: 380px;
+ }
+ .lastc .siwes{
+  width: 380px;
+ }
+ .abt{
+  padding-left: 60px;
+  width: 400px;
+}
+ .add{
+  padding-right: 0px;
+}
+
+
 }
 
 
 @media screen and (max-width:375px){
   .waveback{
-    width: 228%;
-    height: 36rem;
+    width: 237.2%;
+    height: 47.5rem;
   }
-
-    /* Head 375px MQ Starts */
-  #head{
-    width: 228%;
-    margin-bottom: -90px;
-  }
-  .maintit h3{
-    left: 220px;
-  }
-  .motto p{
-    font-size: 19px;
-  }
-  .navlinks ul{
-    margin-left: -30px;
-  }
- 
-    /* Head 375px MQ ends */
-
-    /* Home 375px MQ starts*/
-
-  .banleft h2{
-    font-size: 26px;
+  .header{
+    height: 10%;
   }
   .banleft p{
-    font-size: 17px;
+    width: 440px;
   }
   .exp{
-    right: 45px;
+    right: 400px;
   }
-
-    /* Home 375px MQ ends */
-
-    /* Services 375px MQ starts */
-
   #Services{
-    width: 200%;
-  }
-  .serv h2{
-    font-size: 37px;
-  }
-  .serv p{
-    font-size: 25px;
-  }
-  .courses{
-    margin-left: 10px;
-    margin-right: 30px;
+    width: 237.2%;
   }
   .col{
-    height: 340px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: 370px;
   }
-  .col p{
-    font-size: 18px;
-    color: black;
+  .first .ms,    .lastc .siwes{
+    left: 400px;
   }
-  .lastc .col{
-    height: 300px;
-    left: 163px;
+  .second .UI{
+    left: 400px;
   }
-    /* Services 375px MQ ends */
-
-    /* About 375px MQ starts */
-
+  .second .network{
+    left: 400px;
+  }
+  .third .mobdev{
+    left: 400px;
+  }
+  .lastc .siwes{
+    position: relative;
+    left: 400px;
+    bottom: 101.9rem;
+    height: 400px;
+    width: 370px
+  }
   #About{
-    width: 167%;
+    width: 225%;
   }
   .describe p{
-    font-size: 25px;
-    width: 120%;
+    font-size: 40px;
+    line-height: 60px;
   }
   .log{
     right: 100px;
@@ -1243,94 +1484,48 @@
   .oga{
     right:180px
   }
-
-    /* About 375px MQ ends */
-
-    /* Contact 375px MQ starts */
-
   #contactUs{
-    width: 228%;
-  }
-  .details{
-    padding-right: 80px;
-  }
-
-    /* Contact 375px MQ ends */
-
-    /* footer 375px MQ starts */
-  #footer{
-    width: 228%;
-  }
-  .abt{
-    width: 290px;
-  }
-  .abt p{
-    font-size: 16px;
+    width: 237.2%;
   }
   
-    /* footer 375px MQ ends */
+  #footer{
+    width: 237.2%;
+  }
 }
 
 @media screen and (max-width: 320px){
   .waveback{
-    width: 260%;
-    height: 36rem;
+    width: 283%;
+    height: 48rem;
   }
-
-    /* Head 320px MQ Starts */
-  #head{
-    width: 260%;
-    margin-bottom: -90px;
+  .header{
+    height: 8%;
   }
-  .maintit h3{
-    left: 200px;
-  }
-  .motto p{
-    font-size: 19px;
-  }
-  .navlinks ul{
-    margin-left: -50px;
-  }
- 
-    /* Head 320px MQ ends */
-
-    /* Home 320px MQ starts*/
-
-  .banleft h2{
-    font-size: 24px;
-  }
-  .exp{
-    right: 65px;
-  }
-
-    /* Home 320px MQ ends */
-
-    /* Services 320px MQ starts */
-
-  #Services{
-    width: 227%;
-  }
-  .courses{
-    margin-left: 20px;
+  .hamburger, .toggle-menu{
     margin-right: 30px;
   }
-  .col{
-    margin-right: 8px;
-    margin-bottom: 8px;
+  .banleft p{
+    width: 400px;
   }
-  .lastc .col{
-    left: 150px;
+  .exp{
+    right: 420px;
   }
-    /* Services 320px MQ ends */
-
-    /* About 320px MQ starts */
-
+  .button a{
+    font-size: 27px;
+  }
+  #Services{
+    width: 283%;
+  }
+  .serv p{
+    font-size: 30px;
+  }
   #About{
-    width: 190%;
+    width: 258%;
   }
   .describe p{
-    font-size: 25px;
-    width: 120%;
+    width: 130%;
+    font-size: 41px;
+    letter-spacing: 1px;
   }
   .log{
     right: 100px;
@@ -1338,40 +1533,22 @@
   .oga{
     right:180px
   }
-
-    /* About 320px MQ ends */
-
-    /* Contact 320px MQ starts */
-
   #contactUs{
-    width: 260%;
-  }
-  .details{
-    padding-right: 60px;
+    width: 283%;
   }
   .details p{
-    font-size: 16px;
+    font-size: 28px;
   }
-
-  .contform ul input{
-    padding-right: 10px;
-  }
-  .contform textarea{
-    width: 390px;
-  }
-
-
-    /* Contact 320px MQ ends */
-
-    /* footer 320px MQ starts */
   #footer{
-    width: 260%;
+    width: 283%;
   }
-  #footer p, .quick li a{
-    font-size: 17px;
+  .abt p, .quick li a{
+    font-size: 23px;
   }
-  .abt{
-    width: 295px;
+  .add{
+    padding-right: 32px;
   }
-    /* footer 320px MQ ends */
+  .add p{
+    font-size: 22px;
+  }
 }
