@@ -1283,9 +1283,18 @@ display: none;
   .header{
     height: 8%;
   }
+  .exp{
+    right: 370px;
+  }
   #Services{
     width: 221%;
     height: 140rem;
+  }
+  .col{
+    width: 380px;
+  }
+  .lastc .siwes{
+    width: 380px;
   }
   #About{
     width: 221%;
