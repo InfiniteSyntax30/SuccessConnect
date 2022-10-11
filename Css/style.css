@@ -1280,6 +1280,9 @@ display: none;
     width: 221%;
     height: 46rem;
   }
+  .header{
+    height: 8%;
+  }
   #Services{
     width: 221%;
     height: 140rem;
