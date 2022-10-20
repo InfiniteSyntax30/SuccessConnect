@@ -346,17 +346,20 @@ display: none;
 .describe p{
   color:#4a3d55;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 18px;
 }
+.describe .images{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
 
-.backline{
-  width: 250px;
-  height: 300px;
 }
-.int{
-  position: relative;
-  left: 252px;
-  bottom: 25px;
+.describe .images img{
+  margin-right: 20px;
+  border-radius: 3px;
+  height: 400px;
+  width: 400px;
 }
 .team h2{
   padding-top: 20px;
@@ -364,32 +367,32 @@ display: none;
 }
 .teamcontent{
   display: flex;
-  justify-content: center;
-  margin-top: 40px;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.oga img, .log img{
+  width: 280px;
+  height: 380px;
+  border-radius: 4px;
 }
 .oga h3, .log h3, .oga h4, .log h4{
   position: relative;
-  margin-top: -20px;
+  margin-top: 10px;
   color: #02023b
 }
 .oga h3{
-  left:260px;
+  left:40px;
 }
 .log h3{
-  left: 200px;
+  left: -15px;
 }
 .oga h4{
-  left:350px;
+  left:120px;
   margin-top: -25px;
 }
 .log h4{
-  left: 265px;
+  left: 30px;
   margin-top: -25px;
-}
-.oga, .log{
-  position: relative;
-  right: 100px;
-  top: 30px;
 }
 
 /* About styling ends */
@@ -443,6 +446,7 @@ display: none;
   list-style: none;
 }
 .submit{
+  margin-left: 20px;
   padding: 10px 50px;
   border-radius: 4px;
   text-align: center;
@@ -575,6 +579,10 @@ display: none;
   .teamcontent{
     margin-top: 20px;
   }
+  .oga{
+    margin-left: 150px;
+    margin-right: 250px;
+  }
   /* About 1200px MQ ends */
 
   /* Contact 1200px MQ starts */
@@ -689,6 +697,7 @@ display: none;
 
   #About{
     width: 115%;
+    padding-bottom: 10px;
   }
   .describe h1{
     font-size: 40px;
@@ -699,19 +708,9 @@ display: none;
   .team h2{
     font-size: 35px;
   }
-  .backline{
-    position: relative;
-    left: 252px;
-  }
-  .int{
-    position: absolute;
-    bottom: 75px;
-    z-index: 9;
-  }
   .teamcontent{
-    position: relative;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .oga h3, .log h3, .oga h4, .log h4{
     margin-top: 5px;
@@ -719,10 +718,8 @@ display: none;
   .oga h4, .log h4{
     margin-top: -30px;
   }
-  .oga, .log{
-    position: relative;
-    right: 100px;
-    top: 30px;
+  .oga{
+    margin-left: 150px;
   }
 
     /* About 1024px MQ ends */
@@ -749,6 +746,7 @@ display: none;
     background: #004de6;
   }
   .submit a{
+    margin-left: 100px;
     font-size: 18px;
   }
 
@@ -888,13 +886,50 @@ display: none;
 
   #About{
     width: 125%;
-
   }
   .describe p{
     line-height: 30px;
   }
-  .oga, .log{
-    right: 120px;
+  .describe .images{
+    width:900px
+  }
+  .describe .images img{
+    margin-right: 20px;
+    border-radius: 3px;
+    height: 300px;
+    width: 350px;
+  }
+  .describe .images .f{
+    width: 280px;
+  }
+  .describe .images .l{
+    width: 350px;
+  }
+  .teamcontent{
+    justify-content: space-between;
+  }
+  .oga img, .log img{
+    width: 280px;
+    height: 380px;
+    border-radius: 4px;
+  }
+  .oga{
+    margin-left: 50px;
+    margin-right: 140px;
+  }
+  .oga h3{
+    left:40px;
+  }
+  .log h3{
+    left: -15px;
+  }
+  .oga h4{
+    left:120px;
+    margin-top: -25px;
+  }
+  .log h4{
+    left: 30px;
+    margin-top: -25px;
   }
 
     /* About 768px MQ ends */
@@ -1262,7 +1297,7 @@ display: none;
 
 @media screen and (max-width:425px){
   .waveback{
-    width: 221%;
+    width: 228.5%;
     height: 46rem;
   }
   .header{
@@ -1272,7 +1307,7 @@ display: none;
     right: 370px;
   }
   #Services{
-    width: 221%;
+    width: 228.5%;
     height: 140rem;
   }
   .courses{
@@ -1285,10 +1320,42 @@ display: none;
     width: 390px;
   }
   #About{
-    width: 221%;
+    width: 228.5%;
+  }
+  .describe .images{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  
+  }
+  .describe .images img{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    height: 800px;
+    width: 800px;
+  }
+  /* .teamcontent{
+    justify-content: space-between;
+  } */
+  .oga img, .log img{
+    width: 380px;
+    height: 480px;
+    border-radius: 4px;
+  }
+  .oga{
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+  .oga h3,.log h3{
+    font-size: 23px;
+  }
+  .oga h4, .log h4{
+    font-size: 24px;
   }
   #contactUs{
-    width: 221%;
+    width: 228.5%;
   }
   .details p{
     font-size: 24px;
@@ -1305,7 +1372,7 @@ display: none;
     font-size: 22px;
   }
   #footer{
-    width: 221%;
+    width: 228.5%;
   }
 
 
@@ -1314,7 +1381,7 @@ display: none;
 }
 @media screen and (max-width:421px){
   .waveback{
-    width: 221%;
+    width: 230.5%;
     height: 48rem;
   }
   .hamburger,.toggle-menu{
@@ -1346,7 +1413,7 @@ display: none;
     right: 360px;
   }
   #Services{
-    width: 221%;
+    width: 230.5%;
     height: 140rem;
   }
   .courses{
@@ -1385,7 +1452,7 @@ display: none;
     width: 390px
   }
   #About{
-    width: 221%;
+    width: 230.5%;
   }
   .describe h1{
     font-size: 55px;
@@ -1407,7 +1474,7 @@ display: none;
     right:150px
   }
   #contactUs{
-    width: 221%;
+    width: 230.5%;
   }
   .details p{
     font-size: 26px;
@@ -1421,11 +1488,14 @@ display: none;
   .details .cont::after{
     right: -200px;
   }
+  .submit{
+    margin-left: 0px;
+  }
   .submit a{
     font-size: 24px;
   }
   #footer{
-    width: 221%;
+    width: 230.5%;
   }
   .abt{
     padding-left: 60px;
@@ -1459,11 +1529,17 @@ display: none;
   }
 }
 @media screen and (max-width:413px){
+  .waveback, #Services, #contactUs, #footer{
+    width: 234.6%;
+  }
   .courses{
     margin-left: 0px;
   }
 }
 @media screen and (max-width:407px){
+  .waveback, #Services, #contactUs, #footer{
+    width: 238%;
+  }
  .col{
   width: 380px;
  }
@@ -1483,27 +1559,27 @@ display: none;
  .add{
   padding-right: 0px;
 }
-
-
 }
-
 
 @media screen and (max-width:375px){
   .waveback{
-    width: 237.2%;
+    width: 258.5%;
     height: 47.5rem;
   }
   .header{
-    height: 10%;
+    height: 8%;
   }
   .banleft p{
-    width: 440px;
+    width: 470px;
   }
   .exp{
-    right: 400px;
+    right: 350px;
   }
   #Services{
-    width: 237.2%;
+    width: 258.5%;
+  }
+  .courses{
+    margin-left: 40px;
   }
   .col{
     width: 370px;
@@ -1528,11 +1604,14 @@ display: none;
     width: 370px
   }
   #About{
-    width: 225%;
+    width: 258.5%;
   }
   .describe p{
     font-size: 40px;
     line-height: 60px;
+  }
+  .teamcontent{
+    margin-top: -10px;
   }
   .log{
     right: 100px;
@@ -1541,7 +1620,7 @@ display: none;
     right:180px
   }
   #contactUs{
-    width: 237.2%;
+    width: 258.5%;
   }
   .details p{
     font-size: 26px;
@@ -1550,24 +1629,24 @@ display: none;
     font-size: 28px;
   }
   .details .leave::after{
-    right: -245px;
+    right: -282px;
   }
   .details .cont::after{
-    right: -220px;
+    right: -265px;
   }
   .submit a{
     font-size: 25px;
   }
   
   #footer{
-    width: 237.2%;
+    width: 258.5%;
   }
 }
 
 @media screen and (max-width: 320px){
   .waveback{
-    width: 283%;
-    height: 48rem;
+    width: 303%;
+    height: 49rem;
   }
   .header{
     height: 8%;
@@ -1576,56 +1655,60 @@ display: none;
     margin-right: 30px;
   }
   .banleft p{
-    width: 400px;
+    width: 450px;
   }
   .exp{
-    right: 420px;
+    right: 380px;
   }
   .button a{
     font-size: 27px;
   }
   #Services{
-    width: 283%;
+    width: 303%;
   }
   .serv p{
     font-size: 30px;
   }
   #About{
-    width: 258%;
+    width: 270%;
   }
   .describe p{
     width: 130%;
     font-size: 41px;
     letter-spacing: 1px;
   }
-  .log{
-    right: 100px;
+  .oga h3, .oga h4, .log h3, .log h4{
+    font-size: 24px;
+  }
+  .oga img,.log img{
+    width: 400px;
+    height: 500px;
   }
   .oga{
-    right:180px
+    margin-right: 30px;
   }
   #contactUs{
-    width: 283%;
+    width: 303%;
   }
   .details .leave::after{
-    right: -308px;
+    right: -340px;
   }
   .details .cont::after{
-    right: -285px;
+    right: -318px;
   }
   .submit a{
     font-size: 26px;
   }
   #footer{
-    width: 283%;
+    width: 303%;
   }
   .abt p, .quick li a{
-    font-size: 23px;
+    font-size: 24px;
   }
   .add{
     padding-right: 32px;
   }
   .add p{
-    font-size: 22px;
+    font-size: 23px;
   }
 }
